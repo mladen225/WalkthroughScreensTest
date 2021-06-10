@@ -29,11 +29,9 @@ class ViewControllerRoot: UIViewController {
             
             if directionOfPresent == "" {
                 present(viewController, animated: false, completion:nil)
-            }
-            if directionOfPresent == "Right" {
+            } else if directionOfPresent == "Right" {
                 transitionVc(vc: viewController, duration: 0.2, type: .fromRight)
-            }
-            if directionOfPresent == "Left" {
+            } else if directionOfPresent == "Left" {
                 transitionVc(vc: viewController, duration: 0.5, type: .fromLeft)
             }
             

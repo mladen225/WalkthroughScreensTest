@@ -49,14 +49,22 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6n9-0z-Vja">
+                                <rect key="frame" x="146" y="826" width="122" height="28"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gr0-YR-Apo"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
                             <constraint firstItem="HNg-9h-Us0" firstAttribute="centerX" secondItem="lpD-TQ-Elc" secondAttribute="centerX" id="7gb-Y8-4nH"/>
+                            <constraint firstItem="gr0-YR-Apo" firstAttribute="bottom" secondItem="6n9-0z-Vja" secondAttribute="bottom" constant="8" id="Lec-X3-ujk"/>
+                            <constraint firstItem="6n9-0z-Vja" firstAttribute="centerX" secondItem="lpD-TQ-Elc" secondAttribute="centerX" id="XjE-Ji-qi3"/>
                             <constraint firstItem="HNg-9h-Us0" firstAttribute="centerY" secondItem="lpD-TQ-Elc" secondAttribute="centerY" id="Za9-TS-e4Z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pageController" destination="6n9-0z-Vja" id="RBw-FP-61e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FX1-b4-lLD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,14 +84,22 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HUM-Qd-wNh">
+                                <rect key="frame" x="146" y="826" width="122" height="28"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dPw-Ye-tex"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="aKB-Lr-hYC" firstAttribute="centerY" secondItem="5e0-k1-wH2" secondAttribute="centerY" id="Dcc-nA-e3g"/>
+                            <constraint firstItem="dPw-Ye-tex" firstAttribute="bottom" secondItem="HUM-Qd-wNh" secondAttribute="bottom" constant="8" id="RQd-PP-J9B"/>
                             <constraint firstItem="aKB-Lr-hYC" firstAttribute="centerX" secondItem="5e0-k1-wH2" secondAttribute="centerX" id="SBC-s6-4LN"/>
+                            <constraint firstItem="HUM-Qd-wNh" firstAttribute="centerX" secondItem="5e0-k1-wH2" secondAttribute="centerX" id="Wsb-QP-eRj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pageController" destination="HUM-Qd-wNh" id="KuA-1o-mnX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLI-Xr-Pvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,11 +129,16 @@
                                     <action selector="doneClick:" destination="M0L-Ia-TNh" eventType="touchUpInside" id="buv-4Z-GEM"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gB6-Xg-HZF">
+                                <rect key="frame" x="146" y="826" width="122" height="28"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zKL-8c-8vy"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
                             <constraint firstItem="8dG-A3-MKx" firstAttribute="centerY" secondItem="7qh-nk-ShM" secondAttribute="centerY" id="16S-BK-lSK"/>
+                            <constraint firstItem="zKL-8c-8vy" firstAttribute="bottom" secondItem="gB6-Xg-HZF" secondAttribute="bottom" constant="8" id="4Wq-Y7-49P"/>
+                            <constraint firstItem="gB6-Xg-HZF" firstAttribute="centerX" secondItem="7qh-nk-ShM" secondAttribute="centerX" id="MrD-6J-Xhc"/>
                             <constraint firstItem="9vI-Bb-oUX" firstAttribute="centerX" secondItem="7qh-nk-ShM" secondAttribute="centerX" id="X0H-RO-FIA"/>
                             <constraint firstItem="9vI-Bb-oUX" firstAttribute="centerY" secondItem="7qh-nk-ShM" secondAttribute="centerY" id="frr-Rj-JM5"/>
                             <constraint firstItem="zKL-8c-8vy" firstAttribute="trailing" secondItem="8dG-A3-MKx" secondAttribute="trailing" constant="8" id="i8I-SG-1kL"/>
@@ -125,6 +146,7 @@
                     </view>
                     <connections>
                         <outlet property="doneButton" destination="8dG-A3-MKx" id="7X4-Ho-eMx"/>
+                        <outlet property="pageController" destination="gB6-Xg-HZF" id="Pv6-Cy-zC1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkZ-t8-1cp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

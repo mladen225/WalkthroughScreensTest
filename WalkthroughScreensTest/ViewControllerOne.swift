@@ -9,8 +9,13 @@ import UIKit
 
 class ViewControllerOne: UIViewController {
 
+    
+    @IBOutlet weak var pageController: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pageController.currentPage = 0
         
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.handleGesture))
         swipeLeft.direction = .left

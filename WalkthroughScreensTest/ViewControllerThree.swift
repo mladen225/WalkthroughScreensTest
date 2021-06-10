@@ -11,6 +11,8 @@ class ViewControllerThree: UIViewController {
     
     @IBOutlet weak var doneButton: UIButton!
     
+    @IBOutlet weak var pageController: UIPageControl!
+    
     @IBAction func doneClick(_ sender: Any) {
         
         //directionOfPresent = ""
@@ -21,6 +23,8 @@ class ViewControllerThree: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pageController.currentPage = 2
         
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.handleGesture))
         swipeLeft.direction = .left

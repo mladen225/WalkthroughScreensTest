@@ -11,12 +11,21 @@ class ViewControllerOther: UIViewController {
     
     @IBOutlet weak var backButton: UIButton!
     
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
     @IBAction func backClick(_ sender: Any) {
         
         //directionOfPresent = ""
         viewToPresent = "ViewControllerThree"
         dismiss(animated: false, completion: nil)
         
+    }
+    
+    @IBAction func nextClick(_ sender: Any) {
+        
+        viewToPresent = "CaroselConatainingView"
+        dismiss(animated: false, completion: nil)
     }
     
     override func viewDidLoad() {

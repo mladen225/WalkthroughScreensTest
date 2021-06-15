@@ -19,6 +19,8 @@
 		FA8584D626722B4C00F62D58 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8584D526722B4C00F62D58 /* ViewControllerTwo.swift */; };
 		FA8584D826722B5F00F62D58 /* ViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8584D726722B5F00F62D58 /* ViewControllerOne.swift */; };
 		FA8584DA2672334400F62D58 /* ViewControllerOther.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8584D92672334400F62D58 /* ViewControllerOther.swift */; };
+		FA8584DC2678C88000F62D58 /* CaroselConatainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8584DB2678C88000F62D58 /* CaroselConatainingView.swift */; };
+		FA8584DE2678DF3B00F62D58 /* CustomCollectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8584DD2678DF3B00F62D58 /* CustomCollectionsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		FA8584D526722B4C00F62D58 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		FA8584D726722B5F00F62D58 /* ViewControllerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOne.swift; sourceTree = "<group>"; };
 		FA8584D92672334400F62D58 /* ViewControllerOther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOther.swift; sourceTree = "<group>"; };
+		FA8584DB2678C88000F62D58 /* CaroselConatainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaroselConatainingView.swift; sourceTree = "<group>"; };
+		FA8584DD2678DF3B00F62D58 /* CustomCollectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				FA8584D526722B4C00F62D58 /* ViewControllerTwo.swift */,
 				FA8584D326722B3800F62D58 /* ViewControllerThree.swift */,
 				FA8584D92672334400F62D58 /* ViewControllerOther.swift */,
+				FA8584DB2678C88000F62D58 /* CaroselConatainingView.swift */,
+				FA8584DD2678DF3B00F62D58 /* CustomCollectionsCell.swift */,
 				FA8584A926722A8200F62D58 /* Main.storyboard */,
 				FA8584AC26722A8700F62D58 /* Assets.xcassets */,
 				FA8584AE26722A8700F62D58 /* LaunchScreen.storyboard */,
@@ -274,8 +280,10 @@
 				FA8584A826722A8200F62D58 /* ViewControllerRoot.swift in Sources */,
 				FA8584A426722A8200F62D58 /* AppDelegate.swift in Sources */,
 				FA8584DA2672334400F62D58 /* ViewControllerOther.swift in Sources */,
+				FA8584DE2678DF3B00F62D58 /* CustomCollectionsCell.swift in Sources */,
 				FA8584D826722B5F00F62D58 /* ViewControllerOne.swift in Sources */,
 				FA8584A626722A8200F62D58 /* SceneDelegate.swift in Sources */,
+				FA8584DC2678C88000F62D58 /* CaroselConatainingView.swift in Sources */,
 				FA8584D426722B3800F62D58 /* ViewControllerThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

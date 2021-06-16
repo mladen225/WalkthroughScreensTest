@@ -248,7 +248,7 @@
                                 </cells>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hUf-ez-bTK">
-                                <rect key="frame" x="146" y="826" width="122" height="28"/>
+                                <rect key="frame" x="146.5" y="826.5" width="121.5" height="27.5"/>
                                 <color key="currentPageIndicatorTintColor" systemColor="systemYellowColor"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RA-DR-rqM">
@@ -261,13 +261,40 @@
                                     <action selector="backClick:" destination="9GF-a5-6kl" eventType="touchUpInside" id="Z8Y-Gj-Po4"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="JuF-AD-al3" userLabel="NavSV">
+                                <rect key="frame" x="137" y="726" width="140" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY6-x9-ZAy">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Return">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="returnClick:" destination="9GF-a5-6kl" eventType="touchUpInside" id="BVi-6s-HZX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4D-f3-iSp">
+                                        <rect key="frame" x="99" y="0.0" width="41" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextClick:" destination="9GF-a5-6kl" eventType="touchUpInside" id="U27-Zo-TnW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GA6-Hx-TkR"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="KyL-aB-lVu" firstAttribute="top" secondItem="GA6-Hx-TkR" secondAttribute="top" constant="80" id="7gK-hS-B7f"/>
+                            <constraint firstItem="JuF-AD-al3" firstAttribute="centerX" secondItem="TB4-mp-Q4i" secondAttribute="centerX" id="9QU-QW-lAV"/>
                             <constraint firstItem="hUf-ez-bTK" firstAttribute="centerX" secondItem="TB4-mp-Q4i" secondAttribute="centerX" id="Opk-mI-WL8"/>
                             <constraint firstItem="7RA-DR-rqM" firstAttribute="leading" secondItem="GA6-Hx-TkR" secondAttribute="leading" constant="8" id="Y4b-VW-uHG"/>
+                            <constraint firstItem="GA6-Hx-TkR" firstAttribute="bottom" secondItem="JuF-AD-al3" secondAttribute="bottom" constant="100" id="iKi-rB-nd8"/>
                             <constraint firstItem="KyL-aB-lVu" firstAttribute="centerX" secondItem="TB4-mp-Q4i" secondAttribute="centerX" id="jjy-fi-bAI"/>
                             <constraint firstItem="GA6-Hx-TkR" firstAttribute="bottom" secondItem="hUf-ez-bTK" secondAttribute="bottom" constant="8" id="lq5-Po-vb1"/>
                             <constraint firstItem="7RA-DR-rqM" firstAttribute="top" secondItem="GA6-Hx-TkR" secondAttribute="top" constant="8" id="xA1-RQ-vhX"/>
@@ -276,7 +303,9 @@
                     <connections>
                         <outlet property="backButton" destination="7RA-DR-rqM" id="GsZ-ch-PIS"/>
                         <outlet property="collectionView" destination="KyL-aB-lVu" id="ZwY-ws-7iY"/>
+                        <outlet property="nextButton" destination="E4D-f3-iSp" id="6Ij-6Z-F6J"/>
                         <outlet property="pageControler" destination="hUf-ez-bTK" id="EI1-DW-Hsm"/>
+                        <outlet property="returnButton" destination="gY6-x9-ZAy" id="p1H-NZ-DQK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gsq-x3-2LV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -16,16 +16,35 @@ class CaroselConatainingView: UIViewController, UICollectionViewDataSource, UICo
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
     @IBOutlet weak var pageControler: UIPageControl!
     
-    
     @IBOutlet weak var backButton: UIButton!
+    
+    @IBOutlet weak var returnButton: UIButton!
+    
+    @IBOutlet weak var nextButton: UIButton!
     
     @IBAction func backClick(_ sender: Any) {
         
         viewToPresent = "ViewControllerOther"
         dismiss(animated: false, completion: nil)
+    }
+    
+    
+    @IBAction func nextClick(_ sender: Any) {
+        
+        if currentPage < 2 {
+            collectionView.scrollToItem(at: IndexPath(row: currentPage + 1, section: 0), at: .right, animated: true)
+        }
+        
+    }
+    
+    @IBAction func returnClick(_ sender: Any) {
+        
+        if currentPage > 0 {
+            collectionView.scrollToItem(at: IndexPath(row: currentPage - 1, section: 0), at: .left, animated: true)
+        }
+        
     }
     
     var currentPage = 0 {
@@ -52,6 +71,8 @@ class CaroselConatainingView: UIViewController, UICollectionViewDataSource, UICo
         super.viewDidLoad()
         
         collectionView.isPagingEnabled = true
+        
+        collectionView.isScrollEnabled = false
 
         collectionView.delegate = self
         collectionView.dataSource = self

@@ -9,8 +9,6 @@ import UIKit
 
 let imageArray = ["Image_1", "Image_2", "Image_3"]
 
-//var courses = Course.FetchCourse()
-
 class CaroselConatainingView: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
@@ -96,19 +94,12 @@ class CaroselConatainingView: UIViewController, UICollectionViewDataSource, UICo
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "firstCollectionCell", for: indexPath as IndexPath) as! CustomCollectionsCell
         
-        
-//        let course = courses[indexPath.item]
-//        cell.course = course
-        
-        
         cell.imageView.image = UIImage(named: imageArray[indexPath.row])
 
         cell.label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit \(indexPath.row + 1)"
         cell.label.font = UIFont.systemFont(ofSize: 14)
         cell.label.textColor = .black
         cell.label.numberOfLines = 4
-        
-        //pageControler.currentPage = indexPath.row
         
         
         return cell
@@ -118,12 +109,6 @@ class CaroselConatainingView: UIViewController, UICollectionViewDataSource, UICo
     {
         return CGSize(width: 300, height: 300)
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//
-//        print("SELECTED \(indexPath.row)")
-//
-//    }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
